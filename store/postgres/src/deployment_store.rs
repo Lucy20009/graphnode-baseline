@@ -1831,7 +1831,7 @@ impl EntityWithSpaceName{
             }
             let mut properties_sub: HashMap<String, String> = HashMap::new();
             let mut properties_sub_values: HashMap<String, String> = HashMap::new();
-            if entity.entity.0.get("operation").unwrap().to_string()==String::from("1"){
+            if entity.entity.0.get("operation").unwrap().to_string()==String::from("-1"){
                 for (k,v) in &entity.entity.0{
 
                     if k.clone()==String::from("to_account"){
